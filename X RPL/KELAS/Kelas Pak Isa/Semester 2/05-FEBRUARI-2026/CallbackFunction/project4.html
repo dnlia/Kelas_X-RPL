@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 4 | Callback Function</title>
+</head>
+<body>
+
+    <script>
+        function nilai(x,cb) {
+            cb(x >= 75? 'Lulus' : 'Tidak lulus');
+        }
+
+        nilai(80, function(r) {
+            console.log(r)
+        });
+    </script>
+    
+</body>
+</html>

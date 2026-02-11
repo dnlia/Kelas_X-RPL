@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 5 | Function Constructor</title>
+</head>
+<body>
+
+    <button onclick="buat()">Buku</button>
+    <p id="hasil"></p>
+
+    <script>
+        function Buku(judul, penulis) {
+            this.judul = judul;
+            this.penulis = penulis;
+        }
+
+        function buat() {
+            let b = new Buku('Kita yang Tak Sama', 'ժׁׅ݊ꪀׁׅᥣׁׅ֪ꪱׁׅɑׁׅ֮');
+            hasil.innerHTML = b.judul + ' - ' + b.penulis;
+        }
+    </script>
+    
+</body>
+</html>

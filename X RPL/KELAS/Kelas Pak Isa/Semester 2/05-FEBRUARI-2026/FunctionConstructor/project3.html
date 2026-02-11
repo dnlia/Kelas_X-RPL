@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 3 | Function Constructor</title>
+</head>
+<body>
+
+    <button onclick="buat()">Mobil</button>
+    <p id="hasil"></p>
+
+    <script>
+        function Mobil(merk, warna) {
+            this.merk = merk;
+            this.warna = warna;
+        }
+
+        function buat() {
+            let m = new Mobil('Toyota', 'Biru Muda');
+            hasil.innerHTML = m.merk + ' - ' + m.warna;
+        }
+    </script>
+    
+</body>
+</html>

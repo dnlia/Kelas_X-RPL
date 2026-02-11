@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 4 | Function Constructor</title>
+</head>
+<body>
+
+    <button onclick="buat()">User</button>
+    <p id="hasil"></p>
+
+    <script>
+        function User(username, password) {
+            this.username = username;
+            this.password = password;
+        }
+
+        function buat() {
+            let u = new User('admin', '123');
+            hasil.innerHTML = u.username;
+        }
+    </script>
+    
+</body>
+</html>
