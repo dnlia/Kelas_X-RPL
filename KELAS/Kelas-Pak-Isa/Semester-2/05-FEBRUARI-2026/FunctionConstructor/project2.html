@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 2 | Function Constructor</title>
+</head>
+<body>
+
+    <button onclick="buat()">Buat Produk</button>
+    <p id="hasil"></p>
+
+    <script>
+        function Produk(nama, harga) {
+            this.nama = nama;
+            this.harga = harga;
+        }
+
+        function buat() {
+            let p = new Produk('Novel', 100000);
+            hasil.innerHTML = p.nama + ' - ' + p.harga;
+        }
+    </script>
+    
+</body>
+</html>

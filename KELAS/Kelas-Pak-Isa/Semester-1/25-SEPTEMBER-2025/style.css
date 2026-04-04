@@ -1,0 +1,71 @@
+.rumah {
+    width: 60%;
+    margin: auto;
+}
+
+.jimin {
+    font-style: unset;
+    font-size: medium;
+}
+
+.jm {
+    font-style: oblique;
+    font-size: medium;
+}
+
+.army{
+    color: rgb(45, 45, 106);
+}
+
+.toko{
+    color: rgb(80, 45, 112);
+}
+
+.gatau{
+    text-align: center;
+    /* display:grid;
+    justify-content: center; */
+    color: blueviolet;
+}
+
+.capek{
+    text-align: center;
+    /* display:grid;
+    justify-content: center; */
+    color: rgb(91, 91, 241);
+}
+
+.ok{
+    text-align: left;
+    width: 500px;
+}
+
+.tolong{
+    text-align: center;
+}
+        
+.kompetensi {
+    color: red;
+    font-style: italic;
+    font-size: large;
+}
+     
+.pendidikan{
+    height: 500px;
+}
+
+.huruf{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+}
+        
+.jarak{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.warna{
+    background-color: rgb(167, 232, 231);
+}
+

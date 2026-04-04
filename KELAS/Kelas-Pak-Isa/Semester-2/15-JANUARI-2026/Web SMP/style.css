@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: rgb(229, 132, 132);
+    color: rgb(147, 107, 107);
+    line-height: 1.7;
+}
+
+header {
+    background-color:rgb(111, 27, 27);
+    color: white;
+    padding: 15px;
+}
+
+header img {
+    width: 170px;
+    float: left;
+    margin-top: auto;
+}
+
+header h1,
+header h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 115px;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: auto;
+    text-align: center;
+    margin-right: 115px;
+}
+
+header > a {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: rgb(224, 213, 93);
+    text-decoration: none;
+}
+
+nav {
+    clear: both;
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 16px;
+    background-color: white;
+    color: rgb(179, 70, 92);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: rgb(231, 151, 151);
+}
+
+
+section,
+body > h1,
+body > p,
+body > ol,
+body > ul,
+body > h2 {
+    background-color: white;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(111, 27, 27);
+}
+
+h2 {
+    color: rgb(224, 163, 93);
+    margin-top: 15px;
+}
+
+p {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+ol, ul {
+    padding-left: 20px;
+    margin-top: 10px
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: rgb(121, 36, 57);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+body img[alt="Motto Pelayanan"],
+body img[alt="Maklumat Pelayanan"] {
+    max-width: 500px;
+    width: 90%;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(155, 52, 52);
+}
+
