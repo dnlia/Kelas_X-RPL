@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 1 | Function Constructor</title>
+</head>
+<body>
+
+    <button onclick="buat()">Buat Siswa</button>
+    <p id="hasil"></p>
+
+    <script>
+        function Siswa(nama, kelas) {
+            this.nama = nama;
+            this.kelas = kelas;
+        }
+
+        function buat() {
+            let s = new Siswa('Jimin', 'XII Seni');
+            hasil.innerHTML = s.nama + ' - ' + s.kelas;
+        }
+    </script>
+    
+</body>
+</html>
