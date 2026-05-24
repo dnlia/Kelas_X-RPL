@@ -1,0 +1,100 @@
+ PMA_token |s:32:"7a386f6d5c406c5f7b586861586f5e79"; HMAC_secret |s:16:"T}lI=,qW}rJ>;=tK";browser_access_time|a:4:{s:7:"default";i:1777634280;s:36:"4d1eac44-fef7-3337-a5ef-5874ebef7100";i:1777622622;s:36:"21452f2d-2c44-8259-34f7-752862db7718";i:1777629132;s:36:"75e7c53a-c48d-bbd0-7947-0562db31c640";i:1777634156;}relation|a:1:{i:1;a:41:{s:7:"version";s:5:"5.2.1";s:4:"user";N;s:2:"db";N;s:8:"bookmark";N;s:15:"central_columns";N;s:11:"column_info";N;s:17:"designer_settings";N;s:16:"export_templates";N;s:8:"favorite";N;s:7:"history";N;s:16:"navigationhiding";N;s:9:"pdf_pages";N;s:6:"recent";N;s:8:"relation";N;s:13:"savedsearches";N;s:12:"table_coords";N;s:10:"table_info";N;s:13:"table_uiprefs";N;s:8:"tracking";N;s:10:"userconfig";N;s:10:"usergroups";N;s:5:"users";N;s:12:"bookmarkwork";b:0;s:8:"mimework";b:0;s:18:"centralcolumnswork";b:0;s:8:"commwork";b:0;s:9:"menuswork";b:0;s:20:"designersettingswork";b:0;s:11:"displaywork";b:0;s:19:"exporttemplateswork";b:0;s:12:"favoritework";b:0;s:7:"navwork";b:0;s:7:"pdfwork";b:0;s:10:"recentwork";b:0;s:7:"relwork";b:0;s:17:"savedsearcheswork";b:0;s:11:"historywork";b:0;s:12:"trackingwork";b:0;s:11:"uiprefswork";b:0;s:14:"userconfigwork";b:0;s:8:"allworks";b:0;}}tmpval|a:16:{s:14:"favoriteTables";a:1:{i:1;a:0:{}}s:12:"recentTables";a:1:{i:1;a:4:{i:0;a:2:{s:2:"db";s:6:"dbdata";s:5:"table";s:8:"tblusers";}i:1;a:2:{s:2:"db";s:6:"dbdata";s:5:"table";s:8:"tblporto";}i:2;a:2:{s:2:"db";s:6:"dbdata";s:5:"table";s:5:"tblcv";}i:3;a:2:{s:2:"db";s:6:"dbdata";s:5:"table";s:3:"cvs";}}}s:18:"table_limit_offset";i:0;s:21:"table_limit_offset_db";s:6:"dbdata";s:13:"table_uiprefs";a:1:{i:1;a:1:{s:6:"dbdata";a:4:{s:8:"tblusers";a:0:{}s:3:"cvs";a:0:{}s:5:"tblcv";a:0:{}s:8:"tblporto";a:0:{}}}}s:5:"query";a:10:{s:32:"1c9aa6eaa00514574386a7b5f3a0778a";a:8:{s:3:"sql";s:93:"ALTER TABLE tblcv (
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+    );";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"70d14cd271165fcde725f970878ed4e1";a:8:{s:3:"sql";s:75:"ALTER TABLE tblcv
+FOREIGN KEY (id) REFERENCES users(id) ON DELETE CASCADE;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"8e1b436e3f6941432f7e07fa0c808e1d";a:8:{s:3:"sql";s:48:"ALTER TABLE tblcv 
+ADD user_id BIGINT AFTER id;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"eb4ffcf55eddf7d744919332e3e216c1";a:8:{s:3:"sql";s:320:"CREATE TABLE tblporto (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+   user_id BIGINT,
+  nama_project VARCHAR(255),
+  deskripsi TEXT,
+  gambar VARCHAR(255),
+  link_project VARCHAR(255),
+  created_at TIMESTAMP NULL,
+  updated_at TIMESTAMP NULL
+    
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"dc27412b02fdade5a98929d20f4ea879";a:8:{s:3:"sql";s:321:"CREATE TABLE tblporto (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+   user_id BIGINT,
+  nama_project VARCHAR(255),
+  deskripsi TEXT,
+  gambar VARCHAR(255),
+  link_project VARCHAR(255),
+  created_at TIMESTAMP NULL,
+  updated_at TIMESTAMP NULL,
+    
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"e92a2cf0d0d261ba1e2e182e0c278e0f";a:8:{s:3:"sql";s:21:"SELECT * FROM `tblcv`";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"c379d1b24fa84f3312cb243eff54b2fe";a:8:{s:3:"sql";s:320:"CREATE TABLE tblporto (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  user_id BIGINT,
+  nama_project VARCHAR(255),
+  deskripsi TEXT,
+  gambar VARCHAR(255),
+  link_project VARCHAR(255),
+  created_at TIMESTAMP NULL,
+  updated_at TIMESTAMP NULL,
+    
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"dbfc67621b35bd5c0ef6b4bfca14f078";a:8:{s:3:"sql";s:249:"CREATE TABLE tblporto (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  user_id BIGINT,
+  nama_project VARCHAR(255),
+  deskripsi TEXT,
+  gambar VARCHAR(255),
+  link_project VARCHAR(255),
+  created_at TIMESTAMP NULL,
+  updated_at TIMESTAMP NULL
+);";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"fb277706dacd21fc82975d1e81d5e8f0";a:8:{s:3:"sql";s:24:"SELECT * FROM `tblporto`";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"6ef3ebe8933df58f1765d9ebc839a1e1";a:8:{s:3:"sql";s:24:"SELECT * FROM `tblusers`";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}}s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;s:12:"display_blob";b:0;s:19:"hide_transformation";b:0;s:3:"pos";i:0;s:8:"max_rows";i:25;s:12:"repeat_cells";i:100;s:20:"possible_as_geometry";b:1;}two_factor_check|b:1;cache|a:3:{s:8:"server_1";a:4:{s:15:"userprefs_mtime";i:1777620875;s:14:"userprefs_type";s:7:"session";s:12:"config_mtime";i:1447170388;s:9:"userprefs";a:1:{s:15:"NavigationWidth";i:0;}}s:13:"server_1_root";a:17:{s:17:"is_create_db_priv";b:1;s:14:"is_reload_priv";b:1;s:12:"db_to_create";s:0:"";s:30:"dbs_where_create_table_allowed";a:1:{i:0;s:1:"*";}s:11:"dbs_to_test";b:0;s:9:"proc_priv";b:1;s:10:"table_priv";b:1;s:8:"col_priv";b:1;s:7:"db_priv";b:1;s:11:"binary_logs";a:0:{}s:18:"menu-levels-server";a:13:{s:9:"databases";s:9:"Databases";s:3:"sql";s:3:"SQL";s:6:"status";s:6:"Status";s:6:"rights";s:5:"Users";s:6:"export";s:6:"Export";s:6:"import";s:6:"Import";s:8:"settings";s:8:"Settings";s:6:"binlog";s:10:"Binary log";s:11:"replication";s:11:"Replication";s:4:"vars";s:9:"Variables";s:7:"charset";s:8:"Charsets";s:7:"plugins";s:7:"Plugins";s:6:"engine";s:7:"Engines";}s:14:"menu-levels-db";a:14:{s:9:"structure";s:9:"Structure";s:3:"sql";s:3:"SQL";s:6:"search";s:6:"Search";s:5:"query";s:5:"Query";s:6:"export";s:6:"Export";s:6:"import";s:6:"Import";s:9:"operation";s:10:"Operations";s:10:"privileges";s:10:"Privileges";s:8:"routines";s:8:"Routines";s:6:"events";s:6:"Events";s:8:"triggers";s:8:"Triggers";s:8:"tracking";s:8:"Tracking";s:8:"designer";s:8:"Designer";s:15:"central_columns";s:15:"Central columns";}s:17:"menu-levels-table";a:11:{s:6:"browse";s:6:"Browse";s:9:"structure";s:9:"Structure";s:3:"sql";s:3:"SQL";s:6:"search";s:6:"Search";s:6:"insert";s:6:"Insert";s:6:"export";s:6:"Export";s:6:"import";s:6:"Import";s:10:"privileges";s:10:"Privileges";s:9:"operation";s:10:"Operations";s:8:"tracking";s:8:"Tracking";s:8:"triggers";s:8:"Triggers";}s:19:"profiling_supported";b:1;s:12:"is_superuser";b:1;s:14:"mysql_cur_user";s:14:"root@localhost";s:12:"is_grantuser";b:1;}s:13:"version_check";a:2:{s:8:"response";s:411:"{
+    "version": "5.2.3",
+    "date": "2025-10-08",
+    "releases": [
+        {
+            "version": "5.2.3",
+            "date": "2025-10-08",
+            "php_versions": ">=7.2,<8.4",
+            "mysql_versions": ">=5.5"
+        },
+        {
+            "version": "4.9.11",
+            "date": "2023-02-08",
+            "php_versions": ">=5.5,<8.0",
+            "mysql_versions": ">=5.5"
+        }
+    ]
+}";s:9:"timestamp";i:1777610055;}}git_location|N;is_git_revision|b:0;ConfigFile1|a:2:{s:15:"NavigationWidth";i:0;s:7:"Servers";a:1:{i:1;a:2:{s:7:"only_db";s:0:"";s:7:"hide_db";s:0:"";}}}debug|a:0:{}flashMessages|a:0:{}sql_history|a:25:{i:0;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:8:"tblusers";s:8:"sqlquery";s:24:"SELECT * FROM `tblusers`";}i:1;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:0:"";s:8:"sqlquery";s:331:"CREATE TABLE cvs (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  nama_lengkap VARCHAR(255) NULL,
+  email VARCHAR(255) NULL,
+  telepon VARCHAR(255) NULL,
+  alamat TEXT NULL,
+  pendidikan TEXT NULL,
+  pengalaman TEXT NULL,
+  skills TEXT NULL,
+  cita_cita TEXT NULL,
+  created_at TIMESTAMP NULL,
+  updated_at TIMESTAMP NULL
+);";}i:2;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:3:"cvs";s:8:"sqlquery";s:19:"SELECT * FROM `cvs`";}i:3;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:3:"cvs";s:8:"sqlquery";s:19:"SELECT * FROM `cvs`";}i:4;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:3:"cvs";s:8:"sqlquery";s:19:"SELECT * FROM `cvs`";}i:5;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:0:"";s:8:"sqlquery";s:333:"CREATE TABLE tblcv (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  nama_lengkap VARCHAR(255) NULL,
+  email VARCHAR(255) NULL,
+  telepon VARCHAR(255) NULL,
+  alamat TEXT NULL,
+  pendidikan TEXT NULL,
+  pengalaman TEXT NULL,
+  skills TEXT NULL,
+  cita_cita TEXT NULL,
+  created_at TIMESTAMP NULL,
+  updated_at TIMESTAMP NULL
+);";}i:6;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:5:"tblcv";s:8:"sqlquery";s:21:"SELECT * FROM `tblcv`";}i:7;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:5:"tblcv";s:8:"sqlquery";s:55:"ALTER TABLE tblcv 
+ADD kegemaran TEXT AFTER cita_cita;";}i:8;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:5:"tblcv";s:8:"sqlquery";s:21:"SELECT * FROM `tblcv`";}i:9;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:5:"tblcv";s:8:"sqlquery";s:58:"ALTER TABLE tblcv 
+ADD password VARCHAR(255) AFTER email;";}i:10;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:5:"tblcv";s:8:"sqlquery";s:21:"SELECT * FROM `tblcv`";}i:11;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:5:"tblcv";s:8:"sqlquery";s:21:"SELECT * FROM `tblcv`";}i:12;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:5:"tblcv";s:8:"sqlquery";s:48:"ALTER TABLE tblcv 
+ADD user_id BIGINT AFTER id;";}i:13;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:5:"tblcv";s:8:"sqlquery";s:21:"SELECT * FROM `tblcv`";}i:14;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:8:"tblusers";s:8:"sqlquery";s:24:"SELECT * FROM `tblusers`";}i:15;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:5:"tblcv";s:8:"sqlquery";s:21:"SELECT * FROM `tblcv`";}i:16;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:8:"tblusers";s:8:"sqlquery";s:24:"SELECT * FROM `tblusers`";}i:17;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:8:"tblusers";s:8:"sqlquery";s:161:"INSERT INTO `tblusers` (`id`, `nama_lengkap`, `email`, `password`, `created_at`, `updated_at`) VALUES (NULL, 'Park Jimin', 'jimin@gmail.com', '123', NULL, NULL);";}i:18;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:0:"";s:8:"sqlquery";s:249:"CREATE TABLE tblporto (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  user_id BIGINT,
+  nama_project VARCHAR(255),
+  deskripsi TEXT,
+  gambar VARCHAR(255),
+  link_project VARCHAR(255),
+  created_at TIMESTAMP NULL,
+  updated_at TIMESTAMP NULL
+);";}i:19;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:8:"tblporto";s:8:"sqlquery";s:24:"SELECT * FROM `tblporto`";}i:20;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:8:"tblusers";s:8:"sqlquery";s:24:"SELECT * FROM `tblusers`";}i:21;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:8:"tblusers";s:8:"sqlquery";s:24:"SELECT * FROM `tblusers`";}i:22;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:8:"tblusers";s:8:"sqlquery";s:24:"SELECT * FROM `tblusers`";}i:23;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:8:"tblusers";s:8:"sqlquery";s:24:"SELECT * FROM `tblusers`";}i:24;a:3:{s:2:"db";s:6:"dbdata";s:5:"table";s:8:"tblusers";s:8:"sqlquery";s:24:"SELECT * FROM `tblusers`";}}is_multi_query|b:0;Import_message|a:2:{s:7:"message";N;s:11:"go_back_url";s:45:"index.php?route=/database/structure&db=dbdata";}userconfig|a:2:{s:2:"db";a:1:{s:15:"NavigationWidth";i:0;}s:2:"ts";i:1777620875;}errors|a:0:{}
